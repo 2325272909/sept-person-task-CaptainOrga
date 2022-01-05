@@ -4,7 +4,7 @@
  */
 package cn.edu.whut.sept.zuul;
 
-public class Command
+public class  Command
 {
     private String commandWord;  //基础指令
     private String secondWord;   //具体指令

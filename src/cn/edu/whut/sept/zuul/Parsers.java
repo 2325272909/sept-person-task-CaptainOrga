@@ -1,25 +1,26 @@
-/**
- * @ClassName Parser
- * @Description 该类是“World-of-Zuul”应用程序的解析命令类
- *              关联 类 CommandWords
- *              该类可以解析用户输入的命令，获取我们需要的命令信息
- * 
- */
 package cn.edu.whut.sept.zuul;
 
 import java.util.Scanner;
 
-public class Parser
-{
-    private CommandWords commands;
-    private Scanner reader;
+/**
+ * 
+* @ClassName: Parsers 
+* @Description: 解析类，继承接口IParser  
+* @author liumengying
+* @date 2022年1月5日 下午3:04:41 
+*
+ */
+public class Parsers implements IParser {
 
-    /**
+	 private CommandWords commands;
+	 private Scanner reader;
+	 
+	 /**
      * 
      *@Title: Parser
      *@Description: 初始化内部数据
      */
-    public Parser()
+    public Parsers()
     {
         commands = new CommandWords();
         reader = new Scanner(System.in);
@@ -59,14 +60,10 @@ public class Parser
             return new Command(null, word2);  //如果第一个单词不是命令，置为空
         }
     }
+    
+    public void showCommands() {
+		// TODO Auto-generated method stub
+    	 commands.showAll();
+	}
 
-    /**
-     * 
-     * @Title:showCommands
-     * @Description:显示命令
-     */
-    public void showCommands()
-    {
-        commands.showAll();
-    }
 }
