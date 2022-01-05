@@ -2,6 +2,14 @@ package cn.edu.whut.sept.zuul;
 
 import java.util.ArrayList;
 
+/**
+ * 
+* @ClassName: do_transcend 
+* @Description: 传输功能类
+* @author liumengying
+* @date 2022年1月5日 下午10:48:35 
+*
+ */
 public class do_transcend implements Command_do,Command_getroom {
 
 	 
@@ -15,6 +23,11 @@ public class do_transcend implements Command_do,Command_getroom {
 	}
 	 
 
+	/**
+	  * 传送功能
+	 * @return
+	 * @see cn.edu.whut.sept.zuul.Command_do#dosomething()
+	 */
 	@Override
 	public boolean dosomething() {
 		// TODO Auto-generated method stub
@@ -52,7 +65,11 @@ public class do_transcend implements Command_do,Command_getroom {
         return null;
 	}
 	
-	
+    /**
+         * 返回当前房间
+     * @return
+     * @see cn.edu.whut.sept.zuul.Command_getroom#getcurrentroom()
+     */
 	public Room getcurrentroom()
 	{
 		 

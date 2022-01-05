@@ -196,11 +196,8 @@ public class Game
         
 		return wantToQuit;
          
-        // else command not recognised.
-         
-    }
-
-     
+       // else command not recognised.      
+    }    
 }
 
     
