@@ -8,7 +8,4 @@ package cn.edu.whut.sept.zuul;
 public interface Command_do {
 	
 	boolean dosomething();
-
-	 
-
 }
